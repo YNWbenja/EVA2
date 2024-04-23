@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👟Tienda de Zapatillas👟</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#quienesSomos">¿Quienes Somos?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#store">Store</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <br><br><br><br><br><br>
+    
+    <div id="inicio" class="inicio" style="text-align: center;">   
+        <h1>Bienvenido a la Tienda de Zapatillas</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h2 id="quienesSomos">¿Quiénes somos?</h2>
+            <p>somos apasionados por el mundo del calzado deportivo, especialmente cuando se trata de las icónicas marcas Nike y Jordan. Nos enorgullece ofrecer una amplia selección de    zapatillas que reflejan lo último en estilo, rendimiento y cultura urbana.
+                Nuestro equipo está comprometido en proporcionarte una experiencia de compra excepcional. Desde los clásicos atemporales hasta los lanzamientos más exclusivos, estamos aquí para ayudarte a encontrar el par perfecto que se adapte a tu estilo y necesidades.
+                Con un enfoque en la calidad, autenticidad y servicio al cliente, nos esforzamos por ser tu destino favorito cuando se trata de zapatillas Nike y Jordan. ¡Gracias por ser parte de nuestra comunidad de amantes del calzado!
+            </p>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       
+        <h2 id="contacto">Contacto</h2>
+        <p>Puedes contactarnos a través de correo electrónico: info@tiendazapatillas.com</p>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <div id="store" class="login" style="text-align: center;">
+            <h1>Iniciar sesión</h1>
+            <form class="loginForm" onsubmit="return validarLogin()">
+                <input type="text" class="username" placeholder="Usuario" required><br><br>
+                <input type="password" class="password" placeholder="Contraseña" required><br><br>
+                <button type="submit">Iniciar sesión</button>
+            </form> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    
+    <div class="store" style="display: none;">
+        <h1 style="text-align: center;">Tienda de Zapatillas</h1>
+        <br><br><br>
+        <div class="Tabla">
+            <table>
+                <tr>
+                    <th colspan="3" class="tablatitulo">Tabla de Tallas</th>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="talla" value="5.5Y"> 5.5Y</td>
+                    <td><input type="radio" name="talla" value="5.5"> 5.5</td>
+                    <td><input type="radio" name="talla" value="6"> 6</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="talla" value="6.5"> 6.5</td>
+                    <td><input type="radio" name="talla" value="7"> 7</td>
+                    <td><input type="radio" name="talla" value="7.5"> 7.5</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="talla" value="8"> 8</td>
+                    <td><input type="radio" name="talla" value="8.5"> 8.5</td>
+                    <td><input type="radio" name="talla" value="9"> 9</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="talla" value="9.5"> 9.5</td>
+                    <td><input type="radio" name="talla" value="10"> 10</td>
+                    <td><input type="radio" name="talla" value="10.5"> 10.5</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="talla" value="11"> 11</td>
+                    <td><input type="radio" name="talla" value="11.5"> 11.5</td>
+                    <td><input type="radio" name="talla" value="12"> 12</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br><br><br><br>
+        
+        <div class="boton">
+            <h4><a href="https://www.nike.cl/nike/calzado/hombre/jordan?PS=25&map=c,c,specificationFilter_21,specificationFilter_25&O=OrderByReleaseDateDESC" target="_self">Más Productos</a></h4>
+        </div>
+        
+        <div class="container">
+            <div class="item">
+                <img src="img/zapatilla1.jpg" alt="Zapatilla 1">
+                <p>Air Jordan Retro 1</p>
+                <p>Precio: $132.990</p>
+                <button onclick="AgregarAlCarrito(132990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla1')">Ver más fotos</button>
+            </div>
+            <div class="item">
+                <img src="img/zapatilla2.jpg" alt="Zapatilla 2">
+                <p>Air Jordan Retro 5</p>
+                <p>Precio: $232.990</p>
+                <button onclick="AgregarAlCarrito(232990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla2')">Ver más fotos</button>
+            </div>
+            <div class="item">
+                <img src="img/zapatilla3.jpg" alt="Zapatilla 3">
+                <p>Jumpman MVP</p>
+                <p>Precio: $169.990</p>
+                <button onclick="AgregarAlCarrito(169990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla3')">Ver más fotos</button>
+            </div>
+            <div class="item">
+                <img src="img/zapatilla4.jpg" alt="Zapatilla 4">
+                <p>Jumpman Two Trey</p>
+                <p>Precio: $159.990</p>
+                <button onclick="AgregarAlCarrito(159990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla4')">Ver más fotos</button>
+            </div>
+            <div class="item">
+                <img src="img/zapatilla5.jpg" alt="Zapatilla 5">
+                <p>Air Jordan Retro 1</p>
+                <p>Precio: $132.990</p>
+                <button onclick="AgregarAlCarrito(132990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla5')">Ver más fotos</button>
+            </div>
+            <div class="item">
+                <img src="img/zapatilla6.jpg" alt="Zapatilla 6">
+                <p>Air Jordan Retro 3</p>
+                <p>Precio: $209.990</p>
+                <button onclick="AgregarAlCarrito(209990)">Agregar al carrito</button>
+                <button onclick="MostrarMasFotos('zapatilla6')">Ver más fotos</button>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+        
+        <div class="cart" style="text-align: center; margin-top: 20px;">
+            <h2>Carrito de compras</h2>
+            <p>Total: $<span class="total">0</span></p><br><br>
+            <button onclick="pagar()">Pagar</button>
+        </div>
+       
+        <ul class="sucursales" style="text-align: left">
+            <li>Nike - Las Condes - (2) 2252 2028</li>
+            <li>Nike de Chile - Quilicura, Santiago - (2) 2739 0214</li>
+            <li>Nike Store - La Reina - (2) 2830 6093</li>
+        </ul>
+        
+        <div class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="cerrarModal()">&times;</button>
+                <div class="carousel"></div>
+            </div>
+        </div>
+    </div>
+   
+   <script>
+        var total = 0;
+        function AgregarAlCarrito(precio) { /*Esta funcion se utiliza para poder agregar el precio sumandolo al carrito*/ 
+            total += precio;
+            document.querySelector(".total").textContent = total;
+        }
+        function pagar() { /* funcion para poder realizar el pago abriendo una ventana emergente*/
+            var confirmacion = confirm("¿Desea realizar el pago de $" + total + "?");
+            if (confirmacion) {
+                alert("Gracias por su compra. Se ha realizado el pago de $" + total);
+                total = 0;
+                document.querySelector(".total").textContent = total;
+            } else {
+                alert("El pago ha sido cancelado.");
+            }
+        }
+        function MostrarMasFotos(productName) { /*funcion que abre una ventana modal para mostrar mas fotos al apretar "Ver mas fotos"*/
+            var modal = document.querySelector(".modal");
+            var carousel = modal.querySelector(".carousel");
+            var productImages = {
+                "zapatilla1": ["img/zapatilla1.1.jpg", "img/zapatilla1.2.jpg", "img/zapatilla1.3.jpg"],
+                "zapatilla2": ["img/zapatilla2.1.jpg", "img/zapatilla2.2.jpg", "img/zapatilla2.3.jpg"],
+                "zapatilla3": ["img/zapatilla3.1.jpg", "img/zapatilla3.2.jpg", "img/zapatilla3.3.jpg"],
+                "zapatilla4": ["img/zapatilla4.1.jpg", "img/zapatilla4.2.jpg", "img/zapatilla4.3.jpg"],
+                "zapatilla5": ["img/zapatilla5.1.jpg", "img/zapatilla5.2.jpg", "img/zapatilla5.3.jpg"],
+                "zapatilla6": ["img/zapatilla6.1.jpg", "img/zapatilla6.2.jpg", "img/zapatilla6.3.jpg"]
+            };
+            var images = productImages[productName];
+            if (images && images.length > 0) {
+                carousel.innerHTML = '';
+                images.forEach(function (image) {
+                    var img = document.createElement('img');
+                    img.src = image;
+                    img.alt = productName;
+                    img.classList.add('modal-image');
+                    carousel.appendChild(img);
+                });
+                modal.style.display = "block";
+            }
+        }
+        function cerrarModal() { /*funcion para poder cerrar la ventana modal*/
+            document.querySelector(".modal").style.display = "none";
+        }
+        function validarLogin() { /*funcion para poder validar el login y ocultar la seccion de inicio de sesion y muestra la tienda*/
+            var username = document.querySelector(".username").value;
+            var password = document.querySelector(".password").value;
+            if (username !== "" && password !== "") {
+                document.querySelector(".inicio").style.display = "none";
+                document.querySelector(".store").style.display = "block";
+                return false;
+            } else {
+                alert("Por favor ingrese su usuario y contraseña.");
+                return false;
+            }
+        }
+    </script>
+</body>
+
